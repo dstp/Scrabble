@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestScra",
+	"category" : "ScrabbleV0",
+	"classinstvars" : [
+		"ms"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TestScra01",
+	"type" : "normal"
+}

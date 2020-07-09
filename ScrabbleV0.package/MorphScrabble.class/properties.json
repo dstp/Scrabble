@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "SystemWindow",
+	"category" : "ScrabbleV0",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"modele",
+		"joueur",
+		"sac",
+		"robot",
+		"ptJ",
+		"ptR",
+		"updateModele",
+		"grille",
+		"pions",
+		"point"
+	],
+	"name" : "MorphScrabble",
+	"type" : "normal"
+}

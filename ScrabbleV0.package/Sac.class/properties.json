@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ScrabbleV0",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"morph",
+		"jeu"
+	],
+	"name" : "Sac",
+	"type" : "normal"
+}

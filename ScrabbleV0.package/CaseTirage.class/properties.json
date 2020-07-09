@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "dsp 6/11/2020 15:27",
+	"super" : "Object",
+	"category" : "ScrabbleV0",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pion",
+		"morph",
+		"ligne",
+		"colonne",
+		"whereIs"
+	],
+	"name" : "CaseTirage",
+	"type" : "normal"
+}

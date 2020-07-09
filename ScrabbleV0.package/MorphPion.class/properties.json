@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "TransformationMorph",
+	"category" : "ScrabbleV0",
+	"classinstvars" : [
+		"formPionsRes",
+		"formPionsJRes"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"modele",
+		"face",
+		"faceJ"
+	],
+	"name" : "MorphPion",
+	"type" : "normal"
+}

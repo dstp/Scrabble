@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Morph",
+	"category" : "ScrabbleV0",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"modele",
+		"jeu"
+	],
+	"name" : "MorphGrille",
+	"type" : "normal"
+}

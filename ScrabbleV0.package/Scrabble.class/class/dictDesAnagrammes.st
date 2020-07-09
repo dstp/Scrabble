@@ -1,0 +1,3 @@
+accessing
+dictDesAnagrammes
+	^ dictDesAnagrammes

@@ -1,0 +1,3 @@
+accessing
+valeur
+	^ valeur

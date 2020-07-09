@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "CaseTirage",
+	"category" : "ScrabbleV0",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"valH",
+		"valV",
+		"d",
+		"g",
+		"h",
+		"b"
+	],
+	"name" : "CaseGrille",
+	"type" : "normal"
+}

@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ScrabbleV0",
+	"classinstvars" : [
+		"pions",
+		"dictDesLettres"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"lettre",
+		"valeur",
+		"morph",
+		"owner",
+		"jocker",
+		"whereIs"
+	],
+	"name" : "Pion",
+	"type" : "normal"
+}

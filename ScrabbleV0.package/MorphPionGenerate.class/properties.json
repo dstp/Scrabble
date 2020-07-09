@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Morph",
+	"category" : "ScrabbleV0",
+	"classinstvars" : [
+		"fontLettre",
+		"fontValeur",
+		"colorLettre",
+		"colorValeur",
+		"colorPion"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MorphPionGenerate",
+	"type" : "normal"
+}

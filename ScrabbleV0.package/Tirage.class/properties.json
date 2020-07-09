@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ScrabbleV0",
+	"classinstvars" : [
+		"joueurs"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tirage",
+		"nom",
+		"morph",
+		"jeu",
+		"pts",
+		"manuel",
+		"withJocker"
+	],
+	"name" : "Tirage",
+	"type" : "normal"
+}

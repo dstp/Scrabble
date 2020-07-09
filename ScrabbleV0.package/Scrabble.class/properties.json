@@ -1,0 +1,25 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ScrabbleV0",
+	"classinstvars" : [
+		"dictDesAnagrammes",
+		"dictDesMots",
+		"dictDesMotsKeys"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"grille",
+		"sac",
+		"pions",
+		"morph",
+		"joueur",
+		"robot",
+		"actif",
+		"nbPasses",
+		"undo"
+	],
+	"name" : "Scrabble",
+	"type" : "normal"
+}

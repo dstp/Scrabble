@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MorphCaseTirage",
+	"category" : "ScrabbleV0",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MorphCaseGrille",
+	"type" : "normal"
+}

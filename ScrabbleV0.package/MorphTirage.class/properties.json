@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Morph",
+	"category" : "ScrabbleV0",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nom",
+		"modele",
+		"jeu",
+		"pts"
+	],
+	"name" : "MorphTirage",
+	"type" : "normal"
+}

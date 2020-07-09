@@ -1,0 +1,1 @@
+- Gestion différente pour le drag&drop

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestResource",
+	"category" : "ScrabbleV0",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"ms"
+	],
+	"name" : "TestResourceScrabble",
+	"type" : "normal"
+}

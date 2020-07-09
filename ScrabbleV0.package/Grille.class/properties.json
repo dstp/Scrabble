@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ScrabbleV0",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"grille",
+		"nom",
+		"morph",
+		"lignes",
+		"colonnes",
+		"jeu"
+	],
+	"name" : "Grille",
+	"type" : "normal"
+}
