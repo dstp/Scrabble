@@ -1,3 +1,0 @@
-accessing
-nom
-	^ self lettre

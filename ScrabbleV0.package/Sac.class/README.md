@@ -1,1 +1,0 @@
-Je possède tous les pions

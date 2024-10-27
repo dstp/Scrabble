@@ -1,3 +1,0 @@
-accessing
-couleur
-	^ 1

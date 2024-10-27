@@ -1,1 +1,0 @@
-Le jeu de Scrabble Test UI - Modèle

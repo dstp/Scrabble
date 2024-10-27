@@ -1,3 +1,0 @@
-accessing
-ptJ
-	^ ptJ
