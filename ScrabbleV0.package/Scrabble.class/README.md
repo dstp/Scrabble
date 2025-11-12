@@ -5,4 +5,4 @@ listeDesCles; un ByteString avec les clés du dictionnaire encadrées avec un s�
 
 Scrabble motsAvecLettresEtJockers: 'GR**ATI' filtre: '..(E|I)*'.
 -> 'EMIGRANT GRINCAIT ERIGEAIT AGITERAS AGITEREZ AGITERAI BRIGUAIT GRISANTE GRISATRE TRIANGLE GRILLAIT ERIGEANT GUITARES GRIMPAIT AGIOTERA GRIPPAIT GREFFAIT GRIFFAIT TREPIGNA EMIGRAIT'
-test ssh
+yes
