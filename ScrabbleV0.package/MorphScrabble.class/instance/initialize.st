@@ -42,4 +42,5 @@ initialize
 	self wantsYellowButtonMenu: true.
 	self modele class getDictDesMots.
 	self modele class getDictDesAnagrammes.
+	self dropEnabled: false.
 	self nouvellePartie

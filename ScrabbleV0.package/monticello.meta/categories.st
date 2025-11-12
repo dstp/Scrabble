@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #ScrabbleV0!
+self packageOrganizer ensurePackage: #ScrabbleV0 withTags: #()!
