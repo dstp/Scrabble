@@ -139,16 +139,6 @@ MorphScrabble >> handlesMouseOver: anEvent [
 	^ true
 ]
 
-{ #category : 'accessing' }
-MorphScrabble >> info [
-	^ info
-]
-
-{ #category : 'accessing' }
-MorphScrabble >> info: anObject [
-	info := anObject
-]
-
 { #category : 'initialization' }
 MorphScrabble >> initialize [
 	self setLabel: 'Scrabble By Me'.
@@ -238,16 +228,6 @@ MorphScrabble >> mouseEnter: anEvent [
 	"resout le baigaiement "
 
 	"self basicActivate"
-]
-
-{ #category : 'accessing' }
-MorphScrabble >> nbPions [
-	^ nbPions
-]
-
-{ #category : 'accessing' }
-MorphScrabble >> nbPions: anObject [
-	nbPions := anObject
 ]
 
 { #category : 'menu' }
