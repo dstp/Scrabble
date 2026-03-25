@@ -116,10 +116,44 @@ Scrabble class >> enleveMots: unOuDesMots [
 ]
 
 { #category : 'dico' }
+Scrabble class >> existeDefinition: unMot [
+
+	| url client html extrait debut fin def |
+	(self existeMot: unMot trimBoth asUppercase) ifFalse: [
+		^ 'Le mot n''est pas dans le dictionnaire' ].
+	def := self dictDesMots at: unMot trimBoth asUppercase.
+	def ifNil: [ "Pas de définition dans le dico"
+		url := 'https://www.cnrtl.fr/definition/' , unMot.
+		client := ZnClient new.
+		client
+			url: url;
+			headerAt: 'User-Agent'
+			put:
+				'PharoScrabble/1.0 (https://github.com/PharoScrabble; jean.dupont@example.com)';
+			get.
+		html := client contents.
+		(html includesSubstring: 'Cette forme est introuvable !') ifTrue: [
+			^ 'Cette forme est introuvable !' ].
+		extrait := ''.
+		debut := html indexOfSubCollection: '<span class="tlf_cdefinition">'.
+		debut = 0 ifTrue: [ ^ 'Pas de définition sur www.cnrtl.fr' ].
+		debut := debut + '<span class="tlf_cdefinition">' size.
+		fin := html indexOfSubCollection: '</span>' startingAt: debut.
+		fin = 0 ifTrue: [ ^ 'Pas de définition pb html' ].
+		fin := fin - 2.
+		extrait := html copyFrom: debut to: fin.
+		extrait := extrait copyReplaceAll: '"' with: ''.
+		self dictDesMots at: unMot trimBoth asUppercase put: extrait.
+		^ extrait ].
+	^ def
+]
+
+{ #category : 'dico' }
 Scrabble class >> existeMot: unMot [
 	^ self dictDesMots
 		at: unMot trimBoth asUppercase
-		ifAbsent: [  false ]
+		ifPresent: [ true ]
+		ifAbsent: [ false ]
 ]
 
 { #category : 'jeuDeScrabble' }
@@ -152,16 +186,20 @@ Scrabble class >> getDictDesAnagrammes [
 
 { #category : 'dico' }
 Scrabble class >> getDictDesMots [
-	dictDesMots
-		ifNil: [ | f |
+
+	dictDesMots ifNil: [
+			| f |
 			f := (FileSystem / '/home/dsp/Documents/Scrabble/dicoSave.txt')
-				readStream.
+				     readStream.
 			dictDesMots := Dictionary new.
-			[ f atEnd ]
-				whileFalse: [ | str |
-					str := f nextLine.
-					dictDesMots at: str asUppercase put: true ].
-			f close ].
+			[ f atEnd ] whileFalse: [
+					| str |
+					str := f nextLine findTokens: '$'  .
+					dictDesMots at: str first asUppercase put: (str size = 1
+							 ifTrue: [ nil ]
+							 ifFalse: [ str at: 2 ]).
+					].
+			f close ] .
 	^ dictDesMots
 ]
 
@@ -366,6 +404,9 @@ Scrabble class >> savDictDesMots [
 	self dictDesMots keys sorted
 		do: [ :str | 
 			f nextPutAll: str asLowercase.
+			(self dictDesMots at: str) ifNotNil: [ 
+				f nextPutAll: '$';
+				nextPutAll: (self dictDesMots at: str) ].
 			f lf ].
 	f close
 ]
