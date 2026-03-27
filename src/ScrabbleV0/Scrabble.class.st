@@ -398,7 +398,7 @@ Scrabble class >> raz [
 
 { #category : 'dico' }
 Scrabble class >> savDictDesMots [
-	"save"
+	"save no"
 
 	| f |
 	f := (FileSystem / '/home/dsp/Documents/Scrabble/dicoSave.txt')
