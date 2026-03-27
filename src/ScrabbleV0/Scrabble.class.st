@@ -398,15 +398,17 @@ Scrabble class >> raz [
 
 { #category : 'dico' }
 Scrabble class >> savDictDesMots [
+	"save"
+
 	| f |
 	f := (FileSystem / '/home/dsp/Documents/Scrabble/dicoSave.txt')
-		writeStream.
-	self dictDesMots keys sorted
-		do: [ :str | 
+		     writeStream.
+	self dictDesMots keys sorted do: [ :str |
 			f nextPutAll: str asLowercase.
-			(self dictDesMots at: str) ifNotNil: [ 
-				f nextPutAll: '$';
-				nextPutAll: (self dictDesMots at: str) ].
+			(self dictDesMots at: str) ifNotNil: [
+					f
+						nextPutAll: '$';
+						nextPutAll: (self dictDesMots at: str) ].
 			f lf ].
 	f close
 ]
